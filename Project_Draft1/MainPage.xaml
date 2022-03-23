@@ -1,0 +1,43 @@
+﻿<Page
+    x:Class="Project_Draft1.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Project_Draft1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Padding="15" Margin="10">
+        <StackPanel HorizontalAlignment="Center">
+            <TextBlock HorizontalAlignment="Center">PLaying</TextBlock>
+            <StackPanel Width="100px" Margin="0 50 0 0">
+                <Border CornerRadius="5">
+                    <Image Source="./Assets/song.png"></Image>
+                </Border>
+            </StackPanel>
+            <TextBlock HorizontalAlignment="Center">Music Title</TextBlock>
+            <TextBlock HorizontalAlignment="Center">Music Artist Name</TextBlock>
+            <ProgressBar Background="AliceBlue"></ProgressBar>
+            <StackPanel>
+                <GridView >
+                    
+                
+                
+
+                <Button HorizontalAlignment="Left">
+                        <SymbolIcon Symbol="Previous"></SymbolIcon>
+                </Button>
+                    <Button HorizontalAlignment="Center">
+                        <SymbolIcon Symbol="Play"></SymbolIcon>
+                    </Button>
+                    <Button HorizontalAlignment="Right">
+                        <SymbolIcon Symbol="Next"></SymbolIcon>
+                    </Button>
+
+                </GridView>
+            </StackPanel>
+        </StackPanel>
+
+    </Grid>
+</Page>
