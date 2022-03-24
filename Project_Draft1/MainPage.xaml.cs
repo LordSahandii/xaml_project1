@@ -26,5 +26,24 @@ namespace Project_Draft1
         {
             this.InitializeComponent();
         }
+
+        private void SymbolIcon_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            if (symbol.Symbol == Symbol.Play)
+            {
+                symbol.Symbol = Symbol.Pause;
+            }
+            else
+            {
+                symbol.Symbol = Symbol.Play;
+            }
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+
+        }
     }
 }

@@ -9,7 +9,7 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid Padding="15" Margin="10">
-        <StackPanel HorizontalAlignment="Center">
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
             <TextBlock HorizontalAlignment="Center">PLaying</TextBlock>
             <StackPanel Width="100px" Margin="0 50 0 0">
                 <Border CornerRadius="5">
@@ -17,19 +17,19 @@
                 </Border>
             </StackPanel>
             <TextBlock HorizontalAlignment="Center">Music Title</TextBlock>
-            <TextBlock HorizontalAlignment="Center">Music Artist Name</TextBlock>
-            <ProgressBar Background="AliceBlue"></ProgressBar>
+            <TextBlock HorizontalAlignment="Center" Name="musicArtist">Music Artist Name</TextBlock>
+            <ProgressBar Background="AliceBlue" x:Name="bar"></ProgressBar>
             <StackPanel>
                 <GridView >
-                    
-                
-                
 
-                <Button HorizontalAlignment="Left">
+
+
+
+                    <Button HorizontalAlignment="Left">
                         <SymbolIcon Symbol="Previous"></SymbolIcon>
-                </Button>
-                    <Button HorizontalAlignment="Center">
-                        <SymbolIcon Symbol="Play"></SymbolIcon>
+                    </Button>
+                    <Button HorizontalAlignment="Center" Click="Button_Click">
+                        <SymbolIcon Symbol="Play" Tapped="SymbolIcon_Tapped" x:Name="symbol"></SymbolIcon>
                     </Button>
                     <Button HorizontalAlignment="Right">
                         <SymbolIcon Symbol="Next"></SymbolIcon>
@@ -38,6 +38,6 @@
                 </GridView>
             </StackPanel>
         </StackPanel>
-
+        <TextBlock Width="300" Height="300" HorizontalAlignment="Right" Margin="0 0 20 0" VerticalAlignment="Center">sss</TextBlock>
     </Grid>
 </Page>
